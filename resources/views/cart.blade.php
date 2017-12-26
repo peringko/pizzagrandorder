@@ -29,7 +29,7 @@
             @foreach($products as $i => $product)
               <tr>
                 <td>{{ $product->name }}</td>
-                <td>${{ $product->price }}</td>
+                <td>{{ $product->price }} Baht</td>
                 <td>
                   <input name="qty[{{ $product->id }}]" type="text" value="1" title="quantity"
                          class="form-control qty-input" data-price="{{ $product->price }}"/>
@@ -51,7 +51,7 @@
             <textarea name="note" class="form-control"
                       placeholder="Any note you want to say"></textarea>
           <hr>
-          <p>Total Price: $<span id="total"></span></p><br/>
+          <p>Total Price: <span id="total"></span> Baht</p><br/>
           <script>
             var $chargeView = jQuery( '#total' ),
                 $qtyInput = jQuery( '.qty-input' ),

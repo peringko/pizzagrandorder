@@ -86,7 +86,7 @@
                 <div style="padding: 10px">
                   <div>
                     <h4><a href="javascript:void(0)">{{ $product->name }}</a></h4>
-                    <h4 class="pull-right">${{ $product->price }}</h4>
+                    <h4 class="pull-right">{{ $product->price }} Baht</h4>
 
                     <p>{{ $product->description }}</p>
                   </div>
